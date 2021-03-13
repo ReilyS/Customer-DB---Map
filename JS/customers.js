@@ -8,10 +8,10 @@ let TableDiv=document.getElementById("TableDiv");
 let TableData=[];
 let TheMap;
 
+//Used your code from the slides
 
 async function loadData () {
     TableDiv.innerHTML ="Please wait";
-    //TableData=await getStaticDataPromise();
     TableData=await getJsonDataPromise();
 
     //Our own markers
