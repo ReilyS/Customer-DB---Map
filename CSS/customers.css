@@ -1,0 +1,45 @@
+#map {
+    height: 45vh;
+    width: 85%;
+    float: right;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1p solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+.tRows:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+#infoPanel {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 45vh;
+    width: 15%;
+    background-color: rgba(204, 204, 204, 0.144);
+    text-align: center;
+    line-height: 1.5em;
+}
