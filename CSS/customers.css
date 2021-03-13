@@ -1,9 +1,17 @@
+/* 
+    Name: Reily Stanford and Enrique Tejeda
+    Date: 3/12/2021
+    File: index.css
+*/
+
+/* Styling the Map */
 #map {
     height: 45vh;
     width: 85%;
     float: right;
 }
 
+/* Styling the html and body */
 html,
 body {
     height: 100%;
@@ -11,28 +19,17 @@ body {
     padding: 0;
 }
 
-#floating-panel {
-    position: absolute;
-    top: 10px;
-    left: 25%;
-    z-index: 5;
-    background-color: #fff;
-    padding: 5px;
-    border: 1p solid #999;
-    text-align: center;
-    font-family: "Roboto", "sans-serif";
-    line-height: 30px;
-    padding-left: 10px;
-}
-
+/* Styling text in infoWindow */
 p{
     margin: 0;
 }
 
+/* Highlighting rows on hover */
 .tRows:hover{
     background-color: rgb(204, 204, 204);
 }
 
+/* Styling the information panel to the left of the map */
 #infoPanel {
     position: absolute;
     top: 80px;

@@ -1,3 +1,9 @@
+/* 
+    Name: Reily Stanford and Enrique Tejeda
+    Date: 3/12/2021
+    File: index.js
+*/
+
 let TableDiv=document.getElementById("TableDiv");
 let TableData=[];
 let TheMap;
@@ -5,7 +11,7 @@ let TheMap;
 
 async function loadData () {
     TableDiv.innerHTML ="Please wait";
-    TableData=await getStaticDataPromise();
+    //TableData=await getStaticDataPromise();
     TableData=await getJsonDataPromise();
 
     TableData.push({
@@ -84,7 +90,6 @@ function RenderTable () {
         </tr>
         `;
 
-        
         id ++;
     }
 
@@ -219,6 +224,7 @@ function go(id) {
     TheMap.panTo({lat:TableData[id].lat, lng: TableData[id].lng});
     TheMap.setZoom(10);
 
+    //Adding information to side panel upon clicking go
     document.getElementById("infoPanel").innerHTML= `
         Name: ${TableData[id].first_name} ${TableData[id].last_name}<br>
         Address: ${TableData[id].address}<br> 
