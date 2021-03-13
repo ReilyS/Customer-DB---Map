@@ -8,6 +8,7 @@ async function loadData () {
     TableData=await getStaticDataPromise();
     TableData=await getJsonDataPromise();
 
+    //Our own markers
     TableData.push({
         "first_name" : "Riki" ,
         "last_name" : "Tejeda" ,
